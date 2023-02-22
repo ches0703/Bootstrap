@@ -1,0 +1,21 @@
+// 기본 scss파일보다 위에 선언하여 값을 가져오고,
+// 그 값을 변경하여 기본 scss를 변경된 값으로 스타일을 적용하게 한다.
+
+// EX) 태마의 컬러를 사용자가 원하는 색으로 설정 : primary의 색을 yellowgreen으로
+// Bootstrap의 태마 색상의 정보가 들어있는 파일을 import
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+// 태마의 색상을 변경
+$theme-colors: (
+  "primary":    yellowgreen,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+// 기본 scss를 불러와 위의 값을 토대로 적용
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

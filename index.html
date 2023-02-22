@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+
+  <!-- CSS -->
+  <!-- main -->
+  <link rel="stylesheet" href="/main.scss">
+
+  <!-- JS -->
+  <!-- main -->
+  <!-- <script defer src="/main.js"></script> -->
+  <!-- Optimizing -->
+  <script defer src="/optimizing.js"></script>
+>
+  
+
+</head>
+<body>
+  
+  <!-- Button -->
+  <div>
+    <h4>Button</h4>
+    <!-- Nomal : btn-... 사용 -->
+    <button type="button" class="btn btn-primary">Normal</button>
+    <!-- Outline : btn-outline-... 사용 -->
+    <button type="button" class="btn btn-outline-primary">Outline</button>
+    <!-- Size : large : class에 "btn-lg" 추가 -->
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <!-- Size : samll : class에 "btn-sm" 추가 -->
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <!-- Disabled : HTML요소에 "disabled"속성 추가 -->
+    <button type="button" class="btn btn-primary" disabled>Disabled</button>
+  </div>  
+
+
+  <!-- Button group -->
+  <div>
+    <h4>Button group</h4>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary">Left</button>
+      <button type="button" class="btn btn-primary">Middle</button>
+      <button type="button" class="btn btn-primary">Right</button>
+    </div>
+  </div>
+
+
+  <!-- Dropdown -->
+  <div>
+    <h4>Dropdown</h4>
+    <!-- Nomal -->
+    <h6>Nomal</h6>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <!-- 구분 선 -->
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <!-- Split -->
+    <h6>Split</h6>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Split</button>
+      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <!-- 구분 선 -->
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <!-- Size -->
+    <h6>Szie</h6>
+    <!-- Size : large -->
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Large button
+      </button>
+      <ul class="dropdown-menu">
+        ...
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-lg" type="button">
+        Large split button
+      </button>
+      <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        ...
+      </ul>
+    </div>
+    <!-- Size : small -->
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Small button
+      </button>
+      <ul class="dropdown-menu">
+        ...
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-sm" type="button">
+        Small split button
+      </button>
+      <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        ...
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- List -->
+  <div>
+    <h4>List</h4>
+    <ul class="list-group">
+      <li class="list-group-item">An item</li>
+      <!-- Active Item : class에 "active" 추가-->
+      <!-- aria-current : 웹 접근성과 관련된 속성 -->
+      <li class="list-group-item active" aria-current="true">A second item</li>
+      <!-- Item에 hover효과 추가 : class "list-group-item-action"사용 -->
+      <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+      <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+      <!-- Disabled Item : class에 "Disabled" 추가 -->
+      <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+    </ul>
+  </div>
+
+
+  <!-- Forms -->
+  <div>
+    <h4>Forms</h4>
+    <!-- Example -->
+    <h6>Example</h6>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <!-- Size -->
+    <h6>Size</h6>
+    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+    <!-- Disabled -->
+    <h6>Disabled</h6>
+    <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+    <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+    <!-- ReadOnly -->
+    <h6>ReadOnly</h6>
+    <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
+    <!-- File input -->
+    <h6>File input</h6>
+    <div class="mb-3">
+      <label for="formFile" class="form-label">Default file input example</label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div>
+    <h4>Modal</h4>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Login(Modal)
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- Example : Login -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+            
+          </div>
+          <div class="modal-footer">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>  
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Tooltips -->
+  <div style="margin-bottom: 100px;">
+    <h6>Tooltips</h6>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+      Tooltip on top
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+      Tooltip on right
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+      Tooltip on bottom
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
+      Tooltip on left
+    </button>
+  </div>
+
+
+</body>
+</html>   
